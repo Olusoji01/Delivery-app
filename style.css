@@ -124,7 +124,7 @@ justify-content:flex-end
 }
 section{
     clear: right;
-    height: 1000px;
+    height: 1210px;
     background-color: whitesmoke;
 }
 
@@ -248,13 +248,14 @@ section{
     text-align: center;
 }
 footer{
-    height:100vh;
+    height:500px;
     width:100%;
     position: absolute;
+    background-color: aqua;
 }
 .footer_div{
     position: relative;
-    top: 680px;
+    top: 500px;
     left: 100px; 
 }
 .footer_col{
