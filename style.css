@@ -1,10 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Poppins&family=Raleway&display=swap');
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 html, body{
-    font-family: 'Lato', sans-serif;
+    font-family: 'Poppins', sans-serif;
     background-color: whitesmoke;
 }
 
@@ -24,7 +25,7 @@ html, body{
 #heading-scrolled{
     width: 100%;
     height: 120px;
-    background-color: RGB(233,227,203).
+    background-color: RGBA(233,227,203,0.1);
     display: flex;
 }
 
@@ -73,6 +74,22 @@ right: 20px;
     border-radius: 8px;
     border: 2px solid #fb8500;
 }
+
+#nav-bar button:hover{
+    color: #fb8500;
+    background-color: white;
+}
+
+#nav-bar button a{
+    color: white;
+    text-decoration: none;
+}
+
+#nav-bar button a:hover{
+    color: #fb8500;
+    background-color: white;
+}
+
 .content{
     background-color: whitesmoke;
     margin-top: 135px;
@@ -139,7 +156,7 @@ right: 20px;
     top: 300px;
 }
 
-#head-container button a{
+#head-container .chat button a{
     color:white;
     text-decoration: none;
     text-transform: uppercase;
@@ -224,9 +241,14 @@ section{
     margin: 0px;
   }
 
+  .grid-container > img {
+    z-index: -1;
+  }
+
   .grid-container  button {
     display: block;
     margin: auto;
+    margin-top: -10px;
     text-align: center;
     align-items: center;
     background-color: #fb8500;
@@ -235,6 +257,8 @@ section{
     border-radius: 10px;
     color: white;
     padding:8px 20px;
+    z-index: 1;
+    position: relative;
   }
 
 .section-3{
@@ -298,5 +322,615 @@ footer .footer_col li{
     padding-bottom: 0.7rem;
     margin-right: 150px;
     width: 100%;
+}
+
+footer .footer_col a{
+    color: black;
+    text-decoration: none;
+}
+
+/*register styling*/
+.container{
+    display: flex;
+    max-width: 100%;
+    background-color:#EFA273;
+    ;
+    height: 1000px;
+    justify-content: space-between;
+    position: relative;
+}
+
+.container .log-in{
+background-color: #EFA273;
+flex: 0.5;
+}
+
+.container .log-in{
+    margin-top: 40px;
+    margin-left: 140px;
+    box-sizing: border-box;
+    }
+
+.login-content{
+    margin-top: 220px;
+    position: absolute;
+    left: 150px;
+    width: 30%;
+    height: 500px;
+    text-align: center;
+}
+.login-content h1{
+    text-transform: capitalize;
+    font-size: 38px;
+}
+.login-content p{
+    font-size: 30px;
+}
+.login-content hr{
+    margin-left: auto;
+    margin-right: auto;
+    width: 14%;
+    height: 5px;
+    background-color: black;
+    align-self: center;
+    border-color: black;
+}
+.login-content button{
+    width: 280px;
+    height: 64px;
+    color: black;
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: #EFA273;
+
+}
+
+.login-content button a{
+    font-size: 1.5rem;
+    color: black;
+    text-decoration: none;
+}
+.login-content button a:hover{
+    font-size: 1.5rem;
+    color: white;
+    text-decoration: none;
+}
+
+.container .signup{
+    background-color: whitesmoke;
+    flex: 0.5;
+    justify-content: center;
+    }
+
+.signup h1{
+    text-align: center;
+    font-size: 38px;
+    text-transform: capitalize;
+    margin-top: 160px;
+}
+
+.signup hr{
+    margin-left: auto;
+    margin-right: auto;
+    width: 10%;
+    height: 5px;
+    background-color: #fb8500;
+    align-self: center;
+    border-color: #fb8500;
+}
+.signup .sign-up form{
+    margin-left: 120px;
+}
+
+.signup .sign-up input{
+    width: 477px;
+    height: 64px;
+    margin-top: 32px;
+    border: 2px solid #fb8500;
+    border-radius: 10px;
+    padding-left: 10px;
+}
+.signup .sign-up #button{
+    width: 280px;
+    height: 64px;
+    margin-top: 32px;
+    margin-left: 98.5px;
+    border: 2px solid #fb8500;
+    border-radius: 10px;
+    padding-left: 10px;
+    background-color: #fb8500;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    cursor: pointer;
+}
+.signup-footer{
+    margin-left: 120px;
+}
+
+.signup-footer #signup-p{
+    width: 477px; 
+   text-align: center; 
+   border-bottom: 1px solid #000; 
+   line-height: 0.1em;
+   margin: 10px 0 30px;
+}
+
+.signup-footer span{
+    background:whitesmoke; 
+    padding:0 40px;
+}
+
+.signup-footer .icon{
+    margin-left: 180px;
+    display: flex;
+    justify-content: space-between;
+    width: 20%;
+}
+
+.signup-footer .fa-brands{
+
+}
+.signup-footer .icon-in{
+    width: 477px; 
+   text-align: center; 
+   line-height: 0.1em;
+   margin: 10px 0 30px;
+}
+.signup-footer a{
+    padding: 5px;
+    color: #fb8500;
+    text-decoration: none;
+}
+/*End of getstarted*/
+
+/*Sign in page*/
+.sign_in-container{
+    display: flex;
+    max-width: 100%;
+    height: 1000px;
+    justify-content: space-between;
+    position: relative;
+}
+.sign_in-container .sign_in{
+    background-color: whitesmoke;
+    flex: 0.5;
+    justify-content: center;
+    }
+
+.sign_in h1{
+    text-align: center;
+    font-size: 38px;
+    text-transform: capitalize;
+    margin-top: 160px;
+}
+
+.sign_in hr{
+    margin-left: auto;
+    margin-right: auto;
+    width: 10%;
+    height: 5px;
+    background-color: #fb8500;
+    align-self: center;
+    border-color: #fb8500;
+}
+.sign_in form{
+    margin-left: 120px;
+}
+
+.sign_in .sign_input{
+    width: 477px;
+    height: 64px;
+    margin-top: 25px;
+    border: 2px solid #fb8500;
+    border-radius: 10px;
+    padding-left: 10px;
+}
+/* Custom checkbox*/
+/* The container */
+.label_container {
+    display: block;
+  position: relative;
+  padding-left: 25px;
+  margin-bottom: 8px;
+  margin-top: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  }
+  
+  /* Hide the browser's default checkbox */
+  .label_container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  /* Create a custom checkbox */
+  .label_container .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: white;
+    border: 2px solid orange;
+    border-radius: 5px;
+  }
+  
+  /* On mouse-over, add a grey background color */
+  .label_container:hover input ~ .checkmark {
+    background-color: #ccc;
+  }
+  
+  /* When the checkbox is checked, add a blue background */
+  .label_container input:checked ~ .checkmark {
+    background-color: orange;
+  }
+  
+  /* Create the checkmark/indicator (hidden when not checked) */
+  .label_container .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* Show the checkmark when checked */
+  .label_container input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  /* Style the checkmark/indicator */
+  .label_container .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+/*end of checkbox*/
+.sign_in p{
+    position: relative;
+    margin-top: -20px;
+    margin-left: 325px;
+    color: #fb8500;
+    font-weight: bold;
+}
+.sign_in #button{
+    width: 280px;
+    height: 64px;
+    margin-left: 98.5px;
+    border: 2px solid #fb8500;
+    border-radius: 10px;
+    padding-left: 10px;
+    background-color: #fb8500;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    cursor: pointer;
+}
+.sign_in-footer{
+    margin-left: 120px;
+}
+
+.sign_in-footer #sign_in-p{
+    width: 477px; 
+   text-align: center; 
+   border-bottom: 1px solid #000; 
+   line-height: 0.1em;
+   margin: 10px 0 30px;
+}
+
+.sign_in-footer span{
+    background:whitesmoke; 
+    padding:0 40px;
+    color: rgb(129, 125, 125);
+}
+
+.sign_in-footer .icon{
+    margin-left: 180px;
+    display: flex;
+    justify-content: space-between;
+    width: 20%;
+}
+
+.sign_in-footer .fa-brands{
+
+}
+.sign_in-footer .icon-in{
+    width: 477px; 
+   text-align: center; 
+   line-height: 0.1em;
+   margin: 10px 0 30px;
+   color: rgb(129, 125, 125);
+}
+.sign_in-footer a{
+    padding: 5px;
+    color: #fb8500;
+    text-decoration: none;
+}
+
+.Sign_in-Icon{
+background-color: #EFA273;
+;
+flex: 0.5;
+}
+
+.Sign_in-Icon .icon{
+    margin-top: 320px;
+    margin-left: 30%;
+}
+/*End of sign_in page*/
+
+/*Home page*/
+.home_header{
+    height: 129px;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    z-index: 2;
+}
+
+.home_header .home_icon{
+    margin-left: 125px;
+    margin-top: 30px;
+    flex:0.5;
+
+}
+.home_header .icons{
+    position: absolute;
+    right: 130px;
+}
+
+.home_header .icons img{
+    margin-top: 38px;
+    margin-left: 30px;
+    }
+.home_section .address{
+    width: 1270px;
+    height: 91px;
+    background-color: #fb8500;
+    margin-left: 125px;
+    margin-top: 190px;
+    display: flex;
+    justify-content: space-between;
+}
+.home_section .address p{
+    margin-left: 70px;
+    margin-top: 20px;
+    color: white;
+}
+
+.home_section .address input{
+    margin-right: 20px;
+    margin-top: 20px;
+    height: 56px;
+    flex: 0.3;
+    font-size: 1.5rem;
+    border-color: white;
+}
+
+.home_section .top_categories h1{
+    margin-left: 125px;
+    margin-top: 45px;
+    margin-bottom: 45px;
+}
+
+.home_section .top_categories .top_container{
+    margin-left: 125px;
+    margin-right: 125px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.home_section .top_categories .top_container p{
+    position: absolute;
+    top: 80px;
+    color: black;
+    z-index: 1;
+    height: 73px;
+    width: 283px;
+    text-align: center;
+    padding-top: 23px;
+    background-color: white;
+}
+
+.home_section .top_categories .top_container p:hover{
+    color:#fb8500;
+    cursor: pointer;    
+}
+
+.home_section .delivery_time h1{
+    margin-left: 125px;
+    margin-top: 45px;
+    margin-bottom: 45px;
+}
+
+.home_section .delivery_time .delivery_top_container{
+    margin-left: 125px;
+    margin-right: 125px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    margin-top: 50px;
+}
+
+.home_section .delivery_time .delivery_top_container .pic_foot{
+    position: absolute;
+    bottom: 5px;
+    color: black;
+    z-index: 1;
+    width: 290px;
+    padding-top: 5px;
+    background-color: white;
+}
+
+.home_section .delivery_time .delivery_top_container .pic_foot .love{
+    float: right;
+    margin-top: 13px;
+}
+
+.home_section .delivery_time .delivery_top_container .pic_foot .checked{
+        color: #fb8500;
+}
+
+.home_section .delivery_time .delivery_top_container .pic_foot .rate{
+border: 2px solid #fb8500;
+border-radius: 10px;
+margin-left: 5px;
+background-color: #fb8500;
+color: white;
+}
+
+
+.home_section .more_vendors h1{
+    margin-left: 125px;
+    margin-top: 45px;
+    margin-bottom: 45px;
+}
+
+.home_section .more_vendors .vendor_top_container{
+    margin-left: 125px;
+    margin-right: 125px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    margin-top: 50px;
+}
+
+.home_section .more_vendors .vendor_top_container .pic_foot{
+    position: absolute;
+    bottom: 5px;
+    color: black;
+    z-index: 1;
+    width: 290px;
+    padding-top: 5px;
+    background-color: white;
+}
+
+.home_section .more_vendors .vendor_top_container .pic_foot .love{
+    float: right;
+    margin-top: 13px;
+}
+
+.home_section .more_vendors .vendor_top_container .pic_foot .checked{
+        color: #fb8500;
+}
+
+.home_section .more_vendors .vendor_top_container .pic_foot .rate{
+border: 2px solid #fb8500;
+border-radius: 10px;
+margin-left: 5px;
+background-color: #fb8500;
+color: white;
+}
+
+.testimonial_container{
+    width: 1200px;
+    height: 439px;
+    margin-left: 120px;
+}
+.testimonial_container .text_container{
+    text-align: center;
+    margin-top: 30px;
+}
+.testimonial_container .text_container h3{
+    margin-top: 20px;
+}
+.testimonial_container .testimonial{
+    width: 1200px;
+    height: 348px;
+    display:flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.testimonial_container .testimonial .testimonial_1{
+    width: 625px;
+    height: 348px;
+    border-radius: 2px solid #fb8500;
+    position: relative;
+}
+.testimonial_container .testimonial .testimonial_text1{
+    width: 625px;
+    height: 303.33px;
+    border: 2px solid #fb8500;
+    position: absolute;
+    top: 80px;
+    z-index: -1;
+}
+
+.testimonial_container .testimonial .testimonial_text1 p{
+    margin-top: 148px;
+    margin-left: 40px;
+    font-size: 1.3rem;
+    width: 85%;
+}
+.testimonial_container .testimonial .testimonial_2{
+    width: 551px;
+    height: 348px;
+    border-radius: 2px solid #fb8500;
+    position: relative;
+}
+.testimonial_container .testimonial .testimonial_text2{
+    width: 551px;
+    height: 303.33px;
+    background: linear-gradient(0deg, #FAE3D5, #FAE3D5),
+    linear-gradient(0deg, #EB8A50, #EB8A50);
+    ;
+    border: 2px solid #fb8500;
+    position: absolute;
+    top: 80px;
+    z-index: -1;
+}
+
+.testimonial_container .testimonial .testimonial_text2 p{
+    margin-top: 148px;
+    margin-left: 40px;
+    font-size: 1.3rem;
+    width: 85%;
+}
+
+.homepage_container{
+    top: 1426px;
+    height:500px;
+    width:100%;
+    position: relative;
+    background-color: black;
+}
+.homepage_footer{
+    position: absolute;
+    top: 100px;
+    left: 100px; 
+}
+.homepage_footer_col{
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    position: absolute;
+
+}
+
+.homepage_container .homepage_footer_col li{
+    list-style: none;
+    padding-bottom: 0.7rem;
+    margin-right: 150px;
+    width: 100%;
+    color: white;
+}
+
+.homepage_container .homepage_footer_col a{
+    color: white;
+    text-decoration: none;
 }
 
