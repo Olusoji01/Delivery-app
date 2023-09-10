@@ -5,10 +5,10 @@ window.onscroll = function(ev) {
 }
 
 function myFunc(){
-    window.location.href = "Homepage.html";
+    document.location.href = "Homepage.html";
   }
 
   function myFunc2(){
-    window.location.href = "Homepage2.html";
+    document.location.href = "Homepage2.html";
   }
 
